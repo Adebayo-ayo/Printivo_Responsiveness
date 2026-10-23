@@ -10,6 +10,7 @@ img {
   max-width: 100%;
 }
 main {
+  border: 2px solid rebeccapurple;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +20,8 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
+  background-color: rgb(247, 246, 244);
   width: 90%;
   height: 55px;
 }
@@ -28,7 +30,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   width: 24%;
   margin-left: 74px;
 }
@@ -121,20 +123,20 @@ main {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(236, 232, 217);
- position: sticky;
+  position: sticky;
   top: 0;
   z-index: 2;
   container-type: scroll-state;
   border: 4px solid green;
-  /* padding-left: 88px; */
-  /* padding-right: 88px; */
-  width: 76%;
+  padding-left: 38px;
+  padding-right: 38px;
+  width: 90%;
 }
 
 @container scroll-state(stuck:top) {
-    .navcover{
-      background-color: white;
-    }
+  .navcover {
+    background-color: white;
+  }
 }
 
 .stickynav > img {
@@ -143,14 +145,11 @@ main {
 }
 
 .navcover {
- 
-
   display: flex;
   border: 4px solid red;
   background-color: rgb(236, 232, 217);
-
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 
 .multitext {
@@ -158,7 +157,7 @@ main {
   justify-content: space-around;
   align-items: center;
   /* border: 2px solid green; */
-  margin-left: 300px;
+  margin-left: 280px;
   width: 36%;
   height: 40px;
 }
@@ -175,8 +174,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid green; */
-  width: 16%;
+  border: 2px solid green;
+  width: 19%;
   height: 40px;
 }
 
@@ -201,7 +200,8 @@ main {
   justify-content: center;
   display: flex;
   align-items: center;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
+  background-color: rgb(236, 232, 217);
   width: 90%;
   height: 500px;
 }
@@ -214,6 +214,10 @@ main {
   /* border: 2px solid blue; */
   width: 85%;
   height: 500px;
+}
+
+.child a {
+  display: none;
 }
 
 .righttext {
@@ -289,4 +293,195 @@ input {
 .leftimg > img {
   object-fit: cover;
   width: 500px;
+}
+
+
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  width: 100%;
+  margin-bottom: 90px;
+  padding-top: 40px;
+}
+
+.producttext {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 2px dashed green;
+  width: 80%;
+  height: 40px;
+}
+
+.producttext h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* border: 2px dashed red; */
+  color: rgb(56, 74, 98);
+}
+
+.producttext a {
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px dashed tomato;
+  color: rgb(215, 127, 129);
+}
+
+.cardsparent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 2px dotted green;
+  width: 80%;
+}
+
+.cardchild {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted green;
+  width: 22%;
+  height: 420px;
+}
+
+.imgdiv {
+  overflow: hidden;
+  /* border: 2px dotted red; */
+  width: 100%;
+  height: 210px;
+}
+
+.imgdiv img {
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+}
+
+.cardchild:has(.imgdiv:hover) img {
+  transition: all 0.8s ease;
+  transform: scale(1.2);
+}
+
+.cardsparent2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3.33%;
+  margin-top: 20px;
+  border: 2px dotted green;
+  width: 80%;
+}
+
+.cardchild2 {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted green;
+  width: 22%;
+  height: 420px;
+}
+
+.imgdiv2 {
+  overflow: hidden;
+  /* border: 2px dotted red; */
+  width: 100%;
+  height: 210px;
+}
+
+.imgdiv2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+}
+
+.cardchild2:has(.imgdiv2:hover) img {
+  transition: all 0.8s ease;
+  transform: scale(1.2);
+}
+
+.textdiv,
+.textdiv2 {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px dotted blue; */
+  width: 100%;
+  height: 210px;
+}
+
+.textdiv > h3,
+.textdiv2 > h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(56, 74, 98);
+  /* border: 2px dashed blue; */
+  width: 95%;
+  margin: 16px 0px 0px 12px;
+}
+
+.textdiv > p:nth-child(2),
+.textdiv2 > p:nth-child(2) {
+  margin: 22px 0px 0px 12px;
+  color: rgb(176, 184, 194);
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* border: 2px dashed red; */
+  width: 80%;
+}
+
+.textdiv > p:nth-child(3),
+.textdiv2 > p:nth-child(3) {
+  margin: 16px 0px 0px 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(56, 74, 98);
+  /* border: 2px dashed brown; */
+  width: 80%;
+}
+
+.textdiv > p:nth-child(3) sub,
+.textdiv2 > p:nth-child(3) sub {
+  color: rgb(176, 184, 194);
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* border: 2px dashed red; */
+  width: 100%;
+}
+
+.whinediv,
+.whinediv2 {
+  margin: 22px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  /* border: 2px solid red; */
+  background-color: rgb(235, 98, 100);
+  width: 85%;
+  height: 40px;
+}
+
+.whinediv p,
+.whinediv2 p {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.whinediv img,
+.whinediv2 img {
+  object-fit: cover;
+  width: 16px;
+}
+
+.whinediv:hover img,
+.whinediv2:hover img {
+  transition: transform 0.3s ease;
+  transform: translateX(6px);
 }

@@ -177,4 +177,75 @@
   .leftimg {
     display: none;
   }
+
+/* .cardsparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 2px dotted green;
+  width: 80%;
+}
+
+.cardchild {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted green;
+  width: 80%;
+  height: 420px;
+} */
+
+.producttext {
+  display: flex;
+  justify-content: space-between;
+  border: 2px dashed green;
+  width: 96%;
+  height: 40px;
+}
+
+.producttext h3 {
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 2px dashed red;
+ /* height: 25px; */
+}
+
+.producttext a {
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px dashed tomato;
+  color: rgb(215, 127, 129);
+}
+
+.cardsparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
+  border: 4px dotted purple;
+  width: 96%;
+}
+
+.cardchild {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted green;
+  width: 100%;
+  height: 520px;
+}
+
+
+.imgdiv {
+  /* border: 2px dotted red; */
+  height: 250px;
+}
+
+.imgdiv img {
+  height: 250px;
+}
+
+
 }
