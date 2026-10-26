@@ -841,3 +841,15 @@ footer {
   width: 200px;
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100px;
+  background-color: rgb(203, 202, 200);
+  color: rgb(56, 74, 98);
+  font-family: "Inter", sans-serif;
+  font-size: 1.01rem;
+  font-weight: 600;
+}
