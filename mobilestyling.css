@@ -44,7 +44,6 @@
     height: 28px;
   }
   .navcover {
-    
     background-color: rgb(236, 232, 217);
 
     /* border: 2px solid red; */
@@ -178,7 +177,7 @@
     display: none;
   }
 
-/* .cardsparent {
+  /* .cardsparent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,57 +194,261 @@
   height: 420px;
 } */
 
-.producttext {
-  display: flex;
-  justify-content: space-between;
-  border: 2px dashed green;
-  width: 96%;
-  height: 40px;
-}
+  .producttext {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px dashed green; */
+    width: 96%;
+    height: 40px;
+  }
 
-.producttext h3 {
+  .producttext h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    /* border: 2px dashed red; */
+    /* height: 25px; */
+  }
 
-  font-size: 1.2rem;
-  font-weight: 400;
-  border: 2px dashed red;
- /* height: 25px; */
-}
+  .producttext a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    /* border: 2px dashed tomato; */
+    color: rgb(215, 127, 129);
+  }
 
-.producttext a {
-  font-size: .9rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 2px dashed tomato;
-  color: rgb(215, 127, 129);
-}
+  .cardsparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    /* border: 4px dotted purple; */
+    width: 96%;
+  }
 
-.cardsparent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 20px;
-  gap: 30px;
-  border: 4px dotted purple;
-  width: 96%;
-}
+  .cardchild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px dotted green; */
+    width: 100%;
+    height: 500px;
+  }
 
-.cardchild {
-  display: flex;
-  flex-direction: column;
-  border: 2px dotted green;
-  width: 100%;
-  height: 520px;
-}
+  .imgdiv {
+    /* border: 2px dotted red; */
+    width: 94%;
+    height: 280px;
+  }
 
+  .imgdiv img {
+    width: 100%;
+    height: 280px;
+  }
 
-.imgdiv {
-  /* border: 2px dotted red; */
-  height: 250px;
-}
+  .imgdiv2 {
+    /* border: 2px dotted red; */
+    width: 94%;
+    height: 280px;
+  }
 
-.imgdiv img {
-  height: 250px;
-}
+  .imgdiv2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+  }
 
+  .cardsparent2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    gap: 30px;
+    /* border: 4px dotted purple; */
+    width: 96%;
+  }
 
+  .cardchild2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px dotted green; */
+    width: 100%;
+    height: 500px;
+  }
+
+  .textdiv,
+  .textdiv2 {
+    flex-direction: column;
+    /* border: 2px dashed blue; */
+    width: 94%;
+    height: 210px;
+  }
+
+  .textdiv > h3,
+  .textdiv2 > h3 {
+    font-size: 1.2rem;
+    /* border: 2px dashed blue; */
+  }
+
+  .whinediv,
+  .whinediv2 {
+    margin: 22px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+    background-color: rgb(215, 127, 129);
+    width: 70%;
+    height: 46px;
+  }
+
+  .whinediv p,
+  .whinediv2 p {
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.99rem;
+    font-weight: 600;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 4px dashed red; */
+    width: 100%;
+    height: 240px;
+    /* margin-bottom: 600px; */
+  }
+
+  .ratingtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items:center ; */
+    /* border: 2px dashed green; */
+    width: 90%;
+    height: 160px;
+  }
+
+  .ratingtxt h2 {
+    /* border: 2px dashed blue; */
+    color: rgb(56, 74, 98);
+    font-family: "DM Serif Display", serif;
+    font-size: 1.65rem;
+    font-weight: 300;
+    width: 98%;
+    height: 80px;
+  }
+
+  .ratingtxt p {
+    /* border: 2px dashed peru; */
+    color: rgb(80, 102, 131);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 94%;
+    height: 70px;
+  }
+
+  .rating img {
+    object-fit: cover;
+    width: 90%;
+  }
+
+  .blueborder {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 246, 253);
+    width: 100%;
+    margin-top: 50px;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .blueborder h3 {
+    flex-wrap: nowrap;
+    font-size: 1.8rem;
+    color: rgb(56, 74, 98);
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    /* border: 2px solid peru; */
+    width: 87%;
+    margin: 0 auto 30px auto;
+  }
+
+  .cards-cover {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    /* border: 2px solid green; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .child4 {
+    /* flex: 1; */
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 174px;
+    padding: 20px;
+    /* border-radius: 6px; */
+  }
+
+  .head {
+    width: 100%;
+    height: 128px;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* border: 2px solid blue; */
+    color: rgb(56, 74, 98);
+  }
+
+  .head p:nth-child(1) {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 100%;
+    /* border: 2px solid blue; */
+    height: auto;
+  }
+
+  .head p:nth-child(2) {
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    color: rgb(56, 74, 98);
+
+    margin-top: 20px;
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+  }
+
+  .head p a {
+    color: rgb(1, 174, 255);
+    text-decoration: none;
+  }
+
+  .child4 img {
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+    border: 0.5px solid rgba(86, 72, 72, 0.16);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
 }
