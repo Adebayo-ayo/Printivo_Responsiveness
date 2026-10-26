@@ -779,7 +779,7 @@ footer {
 }
 
 .anchor-elements a {
-  color: rgb(236, 232, 217);
+  color: rgb(255, 255, 255);
   font-family: "Inter", sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
@@ -789,7 +789,7 @@ footer {
 .anchor-elements {
   display: flex;
   flex-direction: column;
-  margin-top: 16px;
+  margin-top: 10px;
   gap: 10px;
 }
 
@@ -808,6 +808,8 @@ footer {
 .deliveery p {
   color: rgb(236, 232, 217);
   margin-bottom: 18px;
+  width: 190px;
+  /* border: 2px solid green; */
   font-family: "Inter", sans-serif;
   font-size: 1.15rem;
   font-weight: 500;
@@ -839,6 +841,7 @@ footer {
 .delivery img {
   object-fit: contain;
   width: 200px;
+  margin-bottom: 35px;
 }
 
 .copyright {
@@ -846,10 +849,29 @@ footer {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 100px;
+  height: 70px;
   background-color: rgb(203, 202, 200);
   color: rgb(56, 74, 98);
   font-family: "Inter", sans-serif;
   font-size: 1.01rem;
   font-weight: 600;
+}
+
+.message{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-radius: 10px;
+background-color: rgb(247, 39, 158);
+color: white;
+/* border: 2px solid pink; */
+width: 120px;
+height: 60px;
+font-family: "Inter", sans-serif;
+font-size: 1.2rem;
+font-weight: 500;
 }
